@@ -20,7 +20,7 @@ _global_script_class_icons={
 
 [application]
 
-config/name="tutorial"
+config/name="DontStealMyFkingDiamond"
 run/main_scene="res://scenes/GameMenuScene.tscn"
 config/icon="res://icon.png"
 
