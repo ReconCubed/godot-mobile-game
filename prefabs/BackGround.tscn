@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://assets/gui/bg.png" type="Texture" id=1]
+
+[node name="BackGround" type="Sprite"]
+scale = Vector2( 22.5, 40 )
+texture = ExtResource( 1 )
+centered = false
+__meta__ = {
+"_edit_lock_": true
+}
