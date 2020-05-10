@@ -17,5 +17,5 @@ func spawn(enemy):
 
 	enemy_instance.set_position(pos)
 	
-	get_node(".").add_child(enemy_instance)
+	get_tree().get_root().add_child(enemy_instance)
 	
