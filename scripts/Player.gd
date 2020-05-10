@@ -2,7 +2,7 @@ extends KinematicBody2D
 
 export (int) var speed = 300
 
-var target = Vector2()
+var target = Vector2(540, 820)
 var velocity = Vector2()
 
 func _input(event):
