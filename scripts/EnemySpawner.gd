@@ -3,14 +3,11 @@ extends Node2D
 
 export (PackedScene) var enemy
 
+var pos = Vector2(0,0)
+
 func _ready():
-	pass # Replace with function body.
-
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-#func _process(delta):
-#	pass
-
+	pos = position
+	print(pos)
 
 func _on_Timer_timeout():
 	spawn(enemy)
@@ -19,7 +16,7 @@ func _on_Timer_timeout():
 func spawn(enemy):
 	var enemy_instance = enemy.instance()
 
-	enemy_instance.set_position(position)
+	enemy_instance.set_position(pos)
 	
 	get_node(".").add_child(enemy_instance)
 	

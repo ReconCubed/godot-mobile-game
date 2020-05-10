@@ -21,7 +21,7 @@ script = ExtResource( 2 )
 [node name="BackGround" parent="." instance=ExtResource( 3 )]
 
 [node name="Player" type="KinematicBody2D" parent="."]
-position = Vector2( 540, 960 )
+position = Vector2( 540, 820 )
 script = ExtResource( 4 )
 
 [node name="Sprite" type="Sprite" parent="Player"]
@@ -47,8 +47,12 @@ shape = SubResource( 2 )
 wait_time = 6.0
 autostart = true
 
+[node name="EnemySpawner2" parent="." instance=ExtResource( 7 )]
+position = Vector2( 540, -100 )
+enemy = ExtResource( 8 )
+
 [node name="EnemySpawner" parent="." instance=ExtResource( 7 )]
-position = Vector2( 540, -60 )
+position = Vector2( 1180, 960 )
 enemy = ExtResource( 8 )
 [connection signal="animation_finished" from="Diamond/DiamondSprite" to="Diamond" method="_on_DiamondSprite_animation_finished"]
 [connection signal="timeout" from="Diamond/AnimationTimer" to="Diamond" method="_on_AnimationTimer_timeout"]
