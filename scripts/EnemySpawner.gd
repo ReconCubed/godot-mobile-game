@@ -7,7 +7,6 @@ var pos = Vector2(0,0)
 
 func _ready():
 	pos = position
-	print(pos)
 
 func _on_Timer_timeout():
 	spawn(enemy)
