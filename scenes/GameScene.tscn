@@ -57,8 +57,10 @@ enemy = ExtResource( 8 )
 
 [node name="BottomSpawner" parent="." instance=ExtResource( 7 )]
 position = Vector2( 540, 2020 )
+enemy = ExtResource( 8 )
 
 [node name="LeftSpawner" parent="." instance=ExtResource( 7 )]
 position = Vector2( -100, 960 )
+enemy = ExtResource( 8 )
 [connection signal="animation_finished" from="Diamond/DiamondSprite" to="Diamond" method="_on_DiamondSprite_animation_finished"]
 [connection signal="timeout" from="Diamond/AnimationTimer" to="Diamond" method="_on_AnimationTimer_timeout"]
