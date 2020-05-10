@@ -17,5 +17,9 @@ func _on_Timer_timeout():
 	$Timer.wait_time = rand_range(5, 15)
 
 func spawn(enemy):
-	print("spawn enemy")
-	pass
+	var enemy_instance = enemy.instance()
+
+	enemy_instance.set_position(position)
+	
+	get_node(".").add_child(enemy_instance)
+	
