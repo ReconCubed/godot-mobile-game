@@ -10,7 +10,7 @@ func _ready():
 
 func _on_Timer_timeout():
 	spawn(enemy)
-	$Timer.wait_time = rand_range(5, 15)
+	$Timer.wait_time = rand_range(10, 20)
 
 func spawn(enemy):
 	var enemy_instance = enemy.instance()
