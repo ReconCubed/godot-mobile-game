@@ -20,6 +20,7 @@ func _physics_process(_delta):
 	for i in get_slide_count():
 		var collision = get_slide_collision(i)
 		if collision.collider.name == "Player":
+			self.hide()
 			self.queue_free()
 			var curScore = counter.getScore()
 			counter.setScore(curScore + 1)
