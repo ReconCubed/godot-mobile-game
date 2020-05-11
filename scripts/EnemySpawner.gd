@@ -7,11 +7,12 @@ var pos = Vector2(0,0)
 
 func _ready():
 	pos = position
-	$Timer.wait_time = rand_range(10, 20)
+	$Timer.wait_time = rand_range(2, 15)
+	$Timer.start()
 
 func _on_Timer_timeout():
 	spawn(enemy)
-	$Timer.wait_time = rand_range(10, 20)
+	$Timer.wait_time = rand_range(10, 30)
 
 func spawn(enemy):
 	var enemy_instance = enemy.instance()
